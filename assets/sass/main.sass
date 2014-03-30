@@ -1,0 +1,78 @@
+@import parts/reset
+@import parts/base
+@import parts/colors
+@import parts/keyframes
+@import parts/layout
+@import parts/mixins
+@import parts/typography
+
+$link_color: rgb(148, 160, 223)
+$link_color_light: rgb(190, 201, 255)
+
+body
+  background: #151a1f url("../images/noisy_net.png") 0 0 fixed    
+  +image-2x("../images/noisy_net.png", 100px, 100px)
+  margin: 0
+  padding: 0
+  color: #ccc
+  font-family: 'Pompiere', arial, serif
+  font-size: 120%
+
+a, a:visited
+  color: #ccc
+  text-decoration: none
+
+a:hover
+  color: #fff
+
+header
+  display: block
+  padding: 20px
+
+figure#logo
+  font-size: 170%
+  margin: 0
+  padding: 0 0 20px 0
+
+nav
+  display: block
+  ul
+    margin: 10px 0 40px 0px
+    display: inline
+    li
+      display: inline-block
+      padding: 0 40px 0 0
+
+.copy-container
+  padding: 1em
+  h1
+    font-size: 220%
+    margin-bottom: 1em
+  p
+    font-size: 130%
+  a
+    text-decoration: none
+    border-bottom: 1px dotted $link_color
+    color: $link_color
+    padding-bottom: 2px
+    &:hover
+      color: $link_color_light
+      border-bottom: 1px dotted $link_color_light
+#container
+  max-width: 1240px
+
+@media only screen and (max-width: 906px)
+  body
+    div#container
+      width: 100%
+      height: auto
+      figure
+        width: 100%
+        height: auto
+        img
+          width: 100%
+          height: auto
+
+.isotope,
+.isotope .isotope-item
+  transition-duration: .2s

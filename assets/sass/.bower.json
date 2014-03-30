@@ -1,0 +1,13 @@
+{
+  "name": "sass-structure",
+  "homepage": "https://github.com/archermalmo/sass-structure",
+  "_release": "3be9d4d534",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3be9d4d53433afca3d327507d1d985401e9aedf3"
+  },
+  "_source": "git://github.com/archermalmo/sass-structure.git",
+  "_target": "*",
+  "_originalSource": "sass-structure"
+}
