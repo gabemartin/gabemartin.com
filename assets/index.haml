@@ -2,7 +2,7 @@
 %html.no-js{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
-    %title Gabe Martin - I deserve a damn website
+    %title Gabe Martin - I deserve a damn website.
     %meta{name: "description", content: "Gabe Martin’s personal website."}
     %link{rel: "canonical", href: "http://www.gabemartin.com"}
     %link{href: "/favicon.ico", rel: "shortcut icon"}
@@ -154,5 +154,15 @@
         %img{alt: "artwork", height: "300", src: "/images/300/lg_shaneandamy@2x.jpg", width: "300"}/
 
     %script{:src => "js/main.js"}
+    // :javascript
+    //   document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
     :javascript
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-132364-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
